@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;700&family=Poppins&display=swap');
 
 /* Set custom variables here */
 
 :root {
-  --bs-primary-rgb: 171, 162, 238;
+  --bs-primary-rgb: 231, 228, 255;
   --bs-primary: #7659B7;
   --bs-btn-bg: #7659B7;
+  --bs-blue: #0061FB;
 }
 
 :root {
@@ -18,7 +19,7 @@
 }
 
 .nav-link {
-  color: white;
+  color: #0061FB;
 }
 
 .nav-link-hover {
@@ -26,39 +27,55 @@
 }
 
 .navbar-brand {
-  color: #F6F3ED;
+  color: #0061FB;
 }
 
 
 body {
-  font-family: "Sarala", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: "Merriweather", serif;
+  font-family: "Palanquin Dark", serif;
 }
 
 h2 {
   text-align: center;
 }
 
-#hero {
+header {
+    color: #0061FB;
+}
+
+.hero {
   height: 800px;
-  background-color: #E4E6DB;
-  background-image: url(../images/hero-bg-img.png);
+  color: white;
+  background-image: url(../images/penguins.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
 
   text-align: center;
 }
 
-li {
-  list-style-type: none;
+.hero-overlay {
+    background: rgba(32, 1, 50, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-#hero .d-flex {
-  height: 800px;
+.hero-text {
+    padding: 30em 30em 30em 30em
+}
+
+li {
+  list-style-type: none;
 }
 
 #works {
@@ -84,14 +101,4 @@ li {
 
 #cta .d-flex {
   height: 400px;
-}
-
-section:not(#hero):not(#cta){
-  padding: 60px 0;
-}
-
-@media(min-width: 993px){
-  section:not(#hero):not(#cta){
-    padding: 100px 0;
-  }
 }
