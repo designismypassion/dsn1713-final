@@ -6,7 +6,8 @@
   --bs-primary-rgb: 231, 228, 255;
   --bs-primary: #7659B7;
   --bs-secondary-rgb: 2, 169, 227;
-  --bs-blue-rgb: 0, 97, 251;
+  --bs-info-rgb: 0, 97, 251;
+  --bs-info: #0061FB;
 }
 
 :root {
@@ -19,15 +20,15 @@
 }
 
 .nav-link {
-  color: #0061FB;
+  color: var(--bs-info);
 }
 
 .nav-link-hover {
-  color: grey;
+  color: purple;
 }
 
 .navbar-brand {
-  color: #0061FB;
+  color: var(--bs-info);
 }
 
 
@@ -50,7 +51,6 @@ header {
 .hero {
   height: 800px;
   color: white;
-  background-image: url(../images/penguins.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
